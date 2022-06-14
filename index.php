@@ -1,3 +1,9 @@
+<?
+$data = require_once('data.php');
+$startData = $data ['about'];
+$massData = $data ['skills'];
+$endData = $data ['contacts'];
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -19,6 +25,13 @@
 
   <button id="toggle-theme-btn"><img src="images/moon.png" alt="dark theme picture" 
    id="toggle-theme-image"></button>
+
+   <div class="slider">
+    <img src="images/nature1.jpeg" alt="Фото соискателя" class="block">
+    <img src="images/nature2.jpg" alt="Ещё одно фото соискателя">
+  </div>
+  <button class="btnRight">Right</button>
+<script src="js/slides.js" class="btnRight" defer></script>
   
     <div class="container">
     <div class="header">
@@ -42,23 +55,24 @@
         <h2> Елизавета Алексеева</h2>
         <h3>Россия, г. Вырица, 21 год, пол:женский</h3>
         <a href="#mycontact">Контактный номер и почта для связи</a>
-        <p>Заканчиваю обучение в ВУЗе по направлению поднотовки юриспруденция.
-Прошла недельный курс в школе интернет профессий "Profi internet" по копирайтингу.</p>
-
-        <p>С февраля по ноябрь 2021 была активистом общественного движения, где получила опыт: работы в команде, организации различных мероприятий до 100 человек, мультимедийного сопровождения мероприятий, создания айдентики; ведения группы в ВК (администрирование, визуальное оформление, создание постов и анкет). </p>
+        <p><?=$startData['edu']?></p>
+        <p><?=$startData['info']?></p>
+        <p><?=$startData['active']?></p>
       </p>
       <hr>
       <h2 id="myskills"> Ключевые навыки:</h2>
-        <ol>
-        <li>Навык работы с компьютером (MS Office, Google Drive, электронные таблицы, PowerPoint)</li>
-        <li>Копирайтинг</li>
-        <li>Корректура текстов</li>
-        <li>Составление и оформление юридических документов</li>
-        <li>Создание чат-ботов в Telegram</li>
-        <li>Организации мероприятий</li>
-        <li>Мультимедийное сопровождение мероприятий</li>
-        <li>Грамотность</li>
+      <? foreach($massData as $value) {?>
+      <ol>
+        <li><?=$value['1']?></li>
+        <li><?=$value['2']?></li>
+        <li><?=$value['3']?></li>
+        <li><?=$value['4']?></li>
+        <li><?=$value['5']?></li>
+        <li><?=$value['6']?></li>
+        <li><?=$value['7']?></li>
+        <li><?=$value['8']?></li>
       </ol>
+      <? } ?> 
         </p>
           <hr>
           <h2 id="mypost"> Желаемая должность:</h2> 
@@ -69,7 +83,9 @@
             <p>График работы: удаленная работа, гибкий график</p>
           </p>
           <hr>
-          <h2 id="mycontact"> Контактные данные:</h2> <p class="leftstr">Телефон: 8(621)895-16-11</p> <p class="rightstr">Почта: ekueg@yahoo.com</p>
+          <h2 id="mycontact"> Контактные данные:</h2> 
+          <p class="leftstr"><?=$endData['tel']?></p> 
+          <p class="rightstr"><?=$endData['email']?></p>
     </div>
     
     
