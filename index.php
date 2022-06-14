@@ -2,6 +2,7 @@
 $data = require_once('data.php');
 $startData = $data ['about'];
 $massData = $data ['skills'];
+$postData = $data ['specialization'];
 $endData = $data ['contacts'];
 ?>
 <!DOCTYPE html>
@@ -75,12 +76,11 @@ $endData = $data ['contacts'];
       <? } ?> 
         </p>
           <hr>
-          <h2 id="mypost"> Желаемая должность:</h2> 
+          <h2 id="mypost"> Желаемые условия работы:</h2> 
           <p>
-            Специализации:
-            <p>Копирайтер, редактор, корректор</p>
-            <p>Занятость: частичная занятость</p>
-            <p>График работы: удаленная работа, гибкий график</p>
+            <p><?=$postData['specializations']?></p>
+            <p><?=$postData['post']?></p>
+            <p><?=$postData['work schedule']?></p>
           </p>
           <hr>
           <h2 id="mycontact"> Контактные данные:</h2> 
