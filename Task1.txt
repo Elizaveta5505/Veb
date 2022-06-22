@@ -1,0 +1,38 @@
+Ответ на задание 1 последней домашней работы
+
+Код1:
+<doRegister>
+   <email>olga@gmail.com</email>
+   <name>Ольга</name>
+   <password>1
+</doRegister>
+</password>
+
+не отвечает правилам Well formed - нарушена вложенность элементов, 
+
+должно быть:
+<doRegister>
+   <email>olga@gmail.com</email>
+   <name>Ольга</name>
+   <password>1</password>
+</doRegister>
+
+Код2:
+{
+"query": "Виктор Иван"
+"count": 7
+"parts": ("NAME", "SURNAME")
+}
+
+не отвечает правилам Well formed - не все данные написаны в виде пар «ключ:значение», 
+данные не разделены запятыми, объекты parts не находятся внутри фигурных скобок {},
+
+должно быть:
+{
+"query": "Виктор Иван",
+"count": 7,
+"parts": {
+   "NAME", 
+   "SURNAME"
+   }
+}
