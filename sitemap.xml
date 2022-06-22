@@ -1,0 +1,22 @@
+<urlset xmlns="https://www.sitemap.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+    <loc>https://name.tmweb.ru/</loc>
+    <lastmod>2022-06-21T23:22:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <image:image>
+    <image:loc>https://name.tmweb.ru/images/403.jpg</image:loc>
+    </image:image>
+    <image:image>
+    <image:loc>https://name.tmweb.ru/images/361.jpg</image:loc>
+    </image:image>
+    <image:image>
+    <image:loc>https://name.tmweb.ru/images/694.jpg</image:loc>
+    </image:image>
+    <image:image>
+    <image:loc>https://name.tmweb.ru/images/107.jpg</image:loc>
+    </image:image>
+    <image:image>
+    <image:loc>https://name.tmweb.ru/images/332.jpg</image:loc>
+    </image:image>
+    </url>
+    </urlset>
