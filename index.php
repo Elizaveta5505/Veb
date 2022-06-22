@@ -15,24 +15,27 @@ $endData = $data ['contacts'];
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/scripts.js" defer></script>
+  <script src="js/slider.js" defer></script>
 
 </head>
 <body>
-  
+<!--   
   <script language="JavaScript">
     let name=prompt("Введите ваше имя");
     alert ("Привет, " + name + "!");
-  </script>
+  </script> -->
 
   <button id="toggle-theme-btn"><img src="images/moon.png" alt="dark theme picture" 
    id="toggle-theme-image"></button>
 
    <div class="slider">
-    <img src="images/nature1.jpeg" alt="Фото соискателя" class="block">
-    <img src="images/nature2.jpg" alt="Ещё одно фото соискателя">
+    <img src="images/332.jpg" class="block" alt="Первое фото соискателя">
+    <img src="images/403.jpg" alt="Ещё фото соискателя" >
+    <img src="images/107.jpg" alt="Ещё фото соискателя">
+    <img src="images/694.jpg" alt="Ещё фото соискателя">
+    <img src="images/361.jpg" alt="Последнее одно фото соискателя">
   </div>
-  <button class="btnRight">Right</button>
-<script src="js/slides.js" class="btnRight" defer></script>
+  <button class="btnSlide">Следующее изображение</button>
   
     <div class="container">
     <div class="header">
@@ -42,15 +45,12 @@ $endData = $data ['contacts'];
       <ul>
         <li><a href="#aboutme">Обо мне</a></li>
         <li><a href="#myskills">Мои навыки</a></li>
-        <li><a href="#mypost">Желаемая должность</a></li>
+        <li><a href="#mypost">Желаемые условия</a></li>
         <li><a href="#mycontact">Мои контакты</a></li>
       </ul>
     </div>
-    <div class="photo">
-      <a href="#"><img  src="images/548.jpg" alt="best photo"></a>   
-  </div>
+
     <div class="content">
-      
       <hr>
       <p id="aboutme">
         <h2> Елизавета Алексеева</h2>
@@ -86,6 +86,7 @@ $endData = $data ['contacts'];
           <h2 id="mycontact"> Контактные данные:</h2> 
           <p class="leftstr"><?=$endData['tel']?></p> 
           <p class="rightstr"><?=$endData['email']?></p>
+          <p></p>
     </div>
     
     
